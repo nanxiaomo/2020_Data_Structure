@@ -1,2 +1,7 @@
 # vscode 配置文件省略
 /.vscode
+sort/.vscode/c_cpp_properties.json
+sort/.vscode/launch.json
+sort/.vscode/task.json
+
+*/*.exe
