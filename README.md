@@ -24,6 +24,14 @@
 | 1 | 静态数组实现栈--从数组头部开始 | [array_stock_fromtop.c](stack/array_stock_fromtop.c)| ||
 | 2 | 静态数组实现栈--从数组尾部开始 | [array_stock_frombottom.c](stack/array_stock_frombottom.c)| ||
 
+## 排序
+
+| # | 方法 | Source Code | 描述 |老师给的参考代码 |
+|:---:|:---:|:---:|:---:|:---:|
+| 1 | 冒泡排序 | [BubbleSort.c](sort/BubbleSort.c)|冒泡排序从前方最小，和从后方最小 ||
+| 2 | 选择排序 | [SelectSort.c](sort/SelectSort.c)|选择排序实现方法||
+| 3 | 插入排序 | [InsertSort.c](sort/InsertSort.c)| 1.通过交换进行排序<br>2.通过找到合适的位置后移实现插入排序||
+
 ## TA
 
 ### TA1
