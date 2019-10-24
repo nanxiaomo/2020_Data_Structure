@@ -48,7 +48,7 @@ STACK_TYPE top(void) {
   if (!is_empty()) {
     return stack[top_element];
   }else {
-    printf("stack is empty\n");
+    return -1;
   }
 }
 
