@@ -33,7 +33,6 @@ void InsertSort_Shift(int *arr[], int n) {
   int temp;
   int i, j;
   for (i = 1; i < n; i++) {
-    temp = arr[i];
     if (arr[i] < arr[i - 1]) {
       temp = arr[i];
       // 找位置
@@ -48,7 +47,7 @@ void InsertSort_Shift(int *arr[], int n) {
 int main() {
   int arr[] = {2, 1, 3, 4, 7, 5};
   int i;
-  InsertSort_Swap(arr, 6);
+  InsertSort_Shift(arr, 6);
   for (i = 0; i < 6; i++) {
     printf(" %d", arr[i]);
   }
