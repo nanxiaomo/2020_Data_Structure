@@ -1,14 +1,13 @@
 #include <stdio.h>
 #include <stdlib.h>
-
+/*********************************************************
+ * 冒泡排序主要思路是：
+* 通过交换使相邻的两个数变成小数在前大数在后，这样每次遍历后，最大的数就“沉”到最后面了。重复N次即可以使数组有序。
+ * 
+ *********************************************************/
 /**
  * @description: 冒泡排序基本用法
  *               向后面pop
- * @param int arr[] 等待排序的数组
- *        int n   数据的个数
- * @return: 空
- * @Author: wang fei
- * @Date: 2019-10-21 18:46:31
  */
 void BubbleSort_popbehind(int arr[],int n) {
     int i,j,temp;
@@ -25,11 +24,6 @@ void BubbleSort_popbehind(int arr[],int n) {
 /**
  * @description: 冒泡排序基本用法
  *               向前面pop
- * @param int arr[] 等待排序的数组
- *        int n   数据的个数
- * @return: 空
- * @Author: wang fei
- * @Date: 2019-10-21 18:46:31
  */
 void BubbleSort_popbefore(int arr[],int n) {
     int i,j,temp;
