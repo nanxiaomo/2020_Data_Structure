@@ -29,13 +29,13 @@
 | # | 方法 | Source Code | 描述 |老师给的参考代码 |
 |:---:|:---:|:---:|:---:|:---:|
 | 1 | 冒泡排序 | [BubbleSort.c](sort/BubbleSort.c)|冒泡排序从前方最小，和从后方最小 |[exmple](sort/BubbleSort_example.c)|
-| 2 | 冒泡排序优化 | [BubbleSortEX.c](sort/BubbleSortEX.c)|记录最后做交换的位置坐标 |[exmple](sort/BubbleSortEX_example.c|
+| 2 | 冒泡排序优化 | [BubbleSortEX.c](sort/BubbleSortEX.c)|记录最后做交换的位置坐标 |[exmple](sort/BubbleSortEX_example.c)|
 | 3 | 选择排序 | [SelectSort.c](sort/SelectSort.c)|选择排序实现方法||
 | 4 | 插入排序 | [InsertSort.c](sort/InsertSort.c)| 1.通过交换进行排序<br>2.通过找到合适的位置后移实现插入排序||
-| 5 | 希尔排序 | [ShellSort.c](sort/ShellSort.c)|||
-| 6 | 快速排序 | [QuickSort.c](sort/QuickSort.c)|||
-| 7 | 归并排序 | [MSort.c](sort/MSort.c)|||
-| 8 | 堆排序 | [HeapSort.c](sort/HeapSort.c)|||
+| 5 | 希尔排序 | [ShellSort.c](sort/ShellSort.c)|希尔排序自己实现过程||
+| 6 | 快速排序 | [QuickSort.c](sort/QuickSort.c)|快速排序自己实现过程||
+| 7 | 归并排序 | [MSort.c](sort/MSort.c)|归并排序自己实现过程||
+| 8 | 堆排序 | [HeapSort.c](sort/HeapSort.c)|堆排序自己实现过程||
 ## TA
 
 ### TA1
