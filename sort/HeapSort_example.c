@@ -1,3 +1,4 @@
+#include <malloc.h>
 #include <stdio.h>
 #define swap(x, y) \
   x = x ^ y;       \
@@ -31,7 +32,7 @@ void head_up(int p[], int add) {
   p[i] = add;
 }
 //  调整堆，和返回最大值的过程
-void head_down(int p[]) {
+int head_down(int p[]) {
   // 堆中目前最小值
   int ret = p[1];
   // 最后一个节点元素
@@ -57,7 +58,21 @@ void head_down(int p[]) {
 void heap1(int a[], int n) {
   int *p = malloc(sizeof(int) * (n + 1));
   int p[0] = 0;
-  for (int i = 0; i < n; i++) {
+  int i;
+  for (i = 0; i < n; i++) {
     head_up(p, a[i]);
   }
+  for (i = 0; i < n; i++) {
+    a[i] = head_dowm(p);
+  }
+}
+int main() {
+  int arr[] = {4, 7, 6, 1, 0, 3, 2, 5};
+  int temp[8] = {};
+  int i;
+  heap1(arr, 8);
+  for (i = 0; i < 8; i++) {
+    printf(" %d", arr[i]);
+  }
+  return 0;
 }
