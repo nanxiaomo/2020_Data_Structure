@@ -1,0 +1,103 @@
+<html>
+
+
+<script>
+    function rand(min, max) {
+        var num = Math.floor(Math.random() * (max - min)) + min;
+        var nums = num.toString();
+        if (nums.indexOf('0') != '-1') {
+            return rand(min, max);
+        }
+        return num;
+    }
+    function getnumber() {
+        var randnum1 = rand(10000, 99999);
+        document.getElementById("number1").innerHTML = randnum1;
+        var randnum2 = rand(10000, 99999);
+        document.getElementById("number2").innerHTML = randnum2;
+        document.getElementById("result").innerHTML = "";
+    }
+    function result() {
+        var num1 = parseInt(document.getElementById("number1").innerText);
+        var num2 = parseInt(document.getElementById("number2").innerText);
+        document.getElementById("result").innerHTML = num1 * num2;
+    }
+
+</script>
+<style>
+    #main {
+        text-align: center;
+        /*让div内部文字居中*/
+        background-color: #fff;
+        border-radius: 20px;
+        padding: 20px;
+        border: 1px solid #666;
+        width: 300px;
+        height: 350px;
+        margin: auto;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
+
+    .row {
+        height: 50px;
+        line-height: 50px;
+        text-align: left;
+        border-bottom: 1px dotted;
+    }
+
+    .btn-border {
+        display: inline-block;
+        max-width: 180px;
+        text-align: left;
+        border: 2px solid #9ec34b;
+        font-size: 16px;
+        color: #9ec34b;
+        text-decoration: none;
+        font-weight: bold;
+        padding: 4px 8px;
+        border-radius: 4px;
+        transition: .4s;
+        background-color: #eeeeee;
+    }
+
+    .btn-border:hover {
+        background-color: #9ec34b;
+        border-color: #cbe585;
+        color: #FFF;
+    }
+    .row-button {
+        margin-top:50px;
+        padding: 20px;
+
+    }
+</style>
+
+<body>
+    <div id="main">
+        <head>多位数乘法练习</head>
+        <div class="row">
+            <span>第一个数：</span>
+            <span id="number1"></span>
+        </div>
+        <div class="row">
+            <span>第二个数：</span>
+            <span id="number2"></span>
+        </div>
+        <div class="row">
+            <span>结果</span>
+            <span id="result"></span>
+        </div>
+        <div class="row-button">
+            <button class="btn-border" onclick="getnumber()">生成随机数</button>
+            <button class="btn-border" onclick="result()">结果</button>
+        </div>
+        
+    </div>
+
+</body>
+
+</html>
