@@ -33,21 +33,20 @@ int balance(unsigned char *p) {
         push(c);
         break;
       case ')':
-        if (depth() == 0 || pop() != '(') {
+        if (pop() != '(') {
           return 0;
         }
         break;
       case ']':
-        if (depth() == 0 || pop() != '[') {
+        if (pop() != '[') {
           return 0;
         }
         break;
       case '}':
-        if (depth() == 0 || pop() != '{') {
+        if (pop() != '{') {
           return 0;
         }
         break;
-
       default:
         break;
     }
@@ -58,7 +57,7 @@ int balance(unsigned char *p) {
     return 0;
   }
 }
-/*第一问验证结果
+/* 第一问验证结果
 int main(void) {
     int_stack();
     push('(');
@@ -70,11 +69,11 @@ int main(void) {
     printf("%c\n",pop());
     printf("%c\n",pop());
     return 1;
-}
-*/
+}*/
 
-int main(void) {
-  unsigned char *input0 = "{a({}))b";
+
+int main(void) {  
+  unsigned char *input0 = "{a({})}b";
   unsigned char *input1 = "{a({)})b";
   unsigned char *input2 = "][";
   unsigned char *input3 = "[]";
