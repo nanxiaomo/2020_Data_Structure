@@ -42,7 +42,7 @@
 |:---:|:---:|:---:|:---:|:---:|
 | 1 | 爬楼梯问题 | [climbStairs.c](dp/climbStairs.c)|递归和循环实现||
 | 2 | 最大子序和 | [maxSubArray.c](dp/maxSubArray.c)|循环N次和分而之治 ||
-
+| 3 | 最大相隔子序和(打家劫舍) | [rob.c](dp/rob.c)|别人的厉害 ||
 ## TA
 
 ### TA1
