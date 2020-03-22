@@ -55,7 +55,7 @@
 |:---:|:---:|:---:|:---:|
 | 1 | 数组中出行次数过半的元素  | [marityElement.c](TA1/marityElement.c)| p1|
 
-### TA2
+### TA3
 
 ```html
   题目主要是关于栈和队列的练习
@@ -63,7 +63,8 @@
 
 | # | 题目 | Source Code | 页数|
 |:---:|:---:|:---:|:---:|
-| 1 | 利用栈实现括号匹配问题  | [Balance_withStock.c](TA2/Balance_withStock.c)| p5-p6|
+| 1 | 利用栈实现括号匹配问题  | [Balance_withStock.c](TA3/Balance_withStock.c)| p5-p6|
+| 2 | 循环队列操作字符串问题  | [buffer.c](TA3/buffer.c| p1|
 
 ### TA4
 
