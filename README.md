@@ -1,5 +1,7 @@
 # 日本大学院考试准备-- 数据结构
 
+## C语言使用中的基本联系
+
 ## 链表
 
 ### 单链表
@@ -38,11 +40,13 @@
 | 8 | 堆排序 | [HeapSort.c](sort/HeapSort.c)|堆排序自己实现过程|[exmple](sort/HeapSort_example.c)|
 
 ## 动态规划
+
 | # | 方法 | Source Code | 描述 |老师给的参考代码 |
 |:---:|:---:|:---:|:---:|:---:|
 | 1 | 爬楼梯问题 | [climbStairs.c](dp/climbStairs.c)|递归和循环实现||
 | 2 | 最大子序和 | [maxSubArray.c](dp/maxSubArray.c)|循环N次和分而之治 ||
 | 3 | 最大相隔子序和(打家劫舍) | [rob.c](dp/rob.c)|别人的厉害 ||
+
 ## TA
 
 ### TA1
@@ -55,6 +59,16 @@
 |:---:|:---:|:---:|:---:|
 | 1 | 数组中出行次数过半的元素  | [marityElement.c](TA1/marityElement.c)| p1|
 
+### TA2
+
+```html
+  题目主要是关于数组和队列的练习
+```
+
+| # | 题目 | Source Code | 页数|
+|:---:|:---:|:---:|:---:|
+| 1 | 关于二分查找的数组下标问题  | [Binary_Search.c](TA2/Binary_Search.c)| |
+
 ### TA3
 
 ```html
@@ -64,7 +78,7 @@
 | # | 题目 | Source Code | 页数|
 |:---:|:---:|:---:|:---:|
 | 1 | 利用栈实现括号匹配问题  | [Balance_withStock.c](TA3/Balance_withStock.c)| p5-p6|
-| 2 | 循环队列操作字符串问题  | [buffer.c](TA3/buffer.c| p1|
+| 2 | 循环队列操作字符串问题  | [buffer.c](TA3/buffer.c)| p1|
 
 ### TA4
 
