@@ -7,8 +7,12 @@ void swap(int *p1, int *p2) {
   *p2 = temp;
 }
 int Qsort(int a[],int lo,int hi){
-    if (lo<hi)
-    {
+    printf("Qsort(a,%d,%d)", lo, hi);
+    for (int i = 0; i < 8; i++) {
+            printf(" %d", a[i]);
+        }
+    printf("\n");
+    if (lo<hi){
         int l = lo;
         int r = hi;
         int piv = a[lo];
@@ -23,20 +27,29 @@ int Qsort(int a[],int lo,int hi){
             l++;
             r--;            
         }
-        for (int i = 0; i < 8; i++) {
-            printf(" %d", a[i]);
+        if (lo<l-1) {
+          Qsort(a,lo,l-1);
         }
-        printf("/n");
-        if (lo<l-1) Qsort(a,lo,l-1);
-        if (r+1<hi) Qsort(a,r+1,hi);
+        if (r+1<hi) {
+          Qsort(a,r+1,hi);
+        }
     }       
 }
 int main() {
-  int arr[] = {4, 7, 6, 1, 0, 3,2,5};
+  int a[] = {4, 7, 6, 1, 0, 3, 2, 5};
+  int b[] = {7, 6, 5, 4, 3, 2, 1, 0};
   int i;
-  Qsort(arr, 0, 7);
+  Qsort(a, 0, 7);
+  printf("排序好的a数组：");
   for (i = 0; i < 8; i++) {
-    printf(" %d", arr[i]);
+    printf(" %d", a[i]);
   }
+  printf("\n");
+  Qsort(b, 0, 7);
+  printf("排序好的b数组：");
+  for (i = 0; i < 8; i++) {
+    printf(" %d", b[i]);
+  }
+  printf("\n");
   return 0;
 }
